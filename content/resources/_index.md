@@ -182,7 +182,7 @@ logos:
         - title: AI Vector
           url: https://appota.com/doc/Adsota/adsota.ai
 layout: resources
-header: A directory of our resources
+intro: A directory of our resources
 title: Adsota Resources, Hello world
 date: 2020-07-21T09:13:28+07:00
 branding:
@@ -214,7 +214,8 @@ reports:
         - title: Vietnamese
           url: https://store.appota.com/index.php/s/moartt5EfcCfkP4
     - image: img/report/report-6.jpg
-      title: Vietnam Mobile App Advertising & Monetization Report - Holiday Seasons
+      title:
+        Vietnam Mobile App Advertising & Monetization Report - Holiday Seasons
         2018
       languages:
         - title: English
@@ -255,7 +256,8 @@ reports:
 magazines:
   header: E-magazines
   items:
-    - title: "E-magazine 01: Thích nghi với COVID-19 Ngành Bán lẻ và Thương mại điện
+    - title:
+        "E-magazine 01: Thích nghi với COVID-19 Ngành Bán lẻ và Thương mại điện
         tử "
       url: https://store.appota.com/index.php/s/WfGox4A9MmKSAYZ
       image: img/resources/e-magazine-1.jpg
@@ -264,4 +266,5 @@ magazines:
       url: https://store.appota.com/index.php/s/Gm6KGP6ACeFD24S
       image: img/resources/e-magazine-2.jpg
 ---
+
 this is body

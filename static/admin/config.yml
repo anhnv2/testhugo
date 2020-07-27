@@ -3,20 +3,98 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'page'
-    label: 'Pages'
+  - name: "page"
+    label: "Pages"
     label_singular: Page
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     delete: false
     files:
       - file: content/resources/_index.md
         name: resources
-        label: Resources      
+        label: Resources
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Description', name: 'description', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "string" }
+          - label: Branding
+            name: branding
+            widget: object
+            fields:
+              - { label: Heading, name: header, widget: string }
+              - name: items
+                label: Items
+                label_singular: item
+                widget: list
+                allow_add: false
+                fields:
+                  - { name: title, widget: string }
+                  - { name: image, widget: hidden }
+                  - { name: url, widget: string }
+          - label: Company Profiles
+            name: companyProfiles
+            widget: object
+            fields:
+              - name: items
+                label: Items
+                label_singular: item
+                widget: list
+                allow_add: false
+                fields:
+                  - { name: title, widget: string }
+                  - { name: image, widget: hidden }
+                  - label: Languages
+                    name: languages
+                    widget: list
+                    allow_add: true
+                    fields:
+                      - { name: title, widget: string }
+                      - { name: url, widget: string }
+          - label: Logos
+            name: Logos
+            widget: object
+            fields:
+              - label: Items
+                name: items
+                widget: list
+                label_singular: item
+                allow_add: true
+                fields:
+                  - { name: title, widget: string }
+                  - { name: image, widget: string }
+                  - label: Link download
+                    name: download
+                    allow_add: true
+                    fields:
+                      - { name: title, widget: string }
+                      - { name: url, widget: string }
+          - label: E-magazines
+            name: magazines
+            widget: object
+            fields:
+              - label: Heading
+                widget: object
+                fields:
+                  - label: Items
+                    name: items
+                    widget: list
+                    label_singular: item
+                    fields:
+                      - { name: title, widget: string }
+                      - { name: url, widget: string }
+          - label: Reports
+            name: reports
+            widget: object
+            fields:
+              - label: Items
+                name: items
+                widget: list
+                fields:
+                  - { name: title, widget: string }
+                  - { name: image, widget: string }
+                  - label: Languages
+                    name: languages
+                    widget: list
+                    allow_add: true
+                    fields:
+                      - { name: title, widget: string }
+                      - { name: url, widget: string }
