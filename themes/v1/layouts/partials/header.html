@@ -1,0 +1,92 @@
+<header>
+  <nav
+    class="navbar navbar-dark navbar-expand-lg fixed-top bg-success transparency border-bottom border-light"
+    id="transmenu"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand text-success" href="{{ relLangURL `/`}}">
+        <img id="logoOTA" style="width: 150px;" src="{{ relURL `img/adsota.png`}}" />
+      </a>
+      <button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      {{ $baseURL := urls.Parse .Site.BaseURL }}
+      <div class="collapse navbar-collapse my-2" id="navcol-1">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="dropdown-toggle nav-link text-uppercase main-menu"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              style="font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: bold; font-style: normal;"
+              href="#"
+            >
+              {{i18n "menu-solutions"}}&nbsp;
+            </a>
+            <div class="dropdown-menu" role="menu">
+              {{ range .Site.Menus.solution -}}
+              {{ $u := strings.TrimPrefix $baseURL.Path .URL | relLangURL }}
+              <a
+                class="dropdown-item text-uppercase main-menu"
+                role="presentation"
+                href="{{ $u }}"
+              >
+                {{ i18n (printf "menu-%v" .Identifier) }}
+              </a>
+              {{ end }}
+            </div>
+          </li>
+         
+          {{range .Site.Menus.main}}
+          {{ $u := strings.TrimPrefix $baseURL.Path .URL | relLangURL }}
+          <li class="nav-item" role="presentation" id="menu-top">
+            <a
+              class="nav-link text-uppercase main-menu"
+              style="letter-spacing: 1px;"
+              target="{{if eq .URL "https://blog.adsota.com/"}}_blank{{end}}"
+              href="{{$u}}"
+            >
+              
+              {{ i18n (printf "menu-%v" .Identifier) }}
+            </a>
+          </li>
+          {{ end }}
+          {{with ne .Params.title "Adsota Resources" }}
+          <li class="dropdown nav-item" id="lang">
+            {{range $.Page.AllTranslations -}}
+            {{ if eq .Language.Lang $.Site.Language.Lang -}}
+            <a
+              class="dropdown-toggle nav-link main-menu"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              style="font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: normal; font-style: normal;"
+              href="{{ .RelPermalink }}"
+            >
+            <img style="width: 22px; padding-bottom: 4px;" src="{{ printf `img/flag_%s.png` .Language.Lang | relURL}}" />
+            </a>
+            {{ end }}
+            {{ end }}
+            <div class="dropdown-menu" role="menu">
+              {{ range $.Page.AllTranslations }}
+              {{ if ne .Language.Lang $.Site.Language.Lang -}}
+              <a
+                class="dropdown-item text-center"
+                role="presentation"
+                href="{{ .Permalink }}"
+                style="font-family: 'Open Sans', sans-serif; font-weight: normal; font-style: normal; font-size: 16px;"
+              >
+              {{ .Language.LanguageName }}
+                <img class="ml-2" src="{{ printf `img/flag_%s.png` .Language.Lang | relURL}}" style="width: 22px;" />
+              </a>
+              {{ end }}
+              {{ end }}
+            </div>
+          </li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

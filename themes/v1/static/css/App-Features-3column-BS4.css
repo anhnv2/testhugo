@@ -1,0 +1,59 @@
+#app-features-row {
+  margin-bottom: 64px;
+}
+
+.af-mrg-btm {
+  margin-bottom: 32px;
+}
+
+.af-mrg-top {
+  margin-top: 32px;
+}
+
+.app-features-list .iphone-mockup {
+  position: relative;
+  max-width: 300px;
+  margin: 64px auto;
+}
+
+.app-features-list .iphone-mockup img.device {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width:992px) {
+  .af-mrg-btm {
+    margin-bottom: 96px;
+  }
+}
+
+@media (min-width:992px) {
+  .app-features-list .iphone-mockup {
+    margin: -48px auto 0;
+  }
+}
+
+.text-primary {
+  color: #10aa08!important;
+}
+
+.border-primary {
+  border-color: #50e5eb!important;
+}
+
+.bg-primary {
+  background: -webkit-linear-gradient(left,#50e5eb 0%,#00a9ff 100%);
+}
+
+@media (max-width: 430px) {
+  #reco {
+    margin-bottom: 30px!important;
+  }
+}
+
+@media (max-width: 430px) {
+  #reco2 {
+    margin-top: 37px!important;
+  }
+}
+

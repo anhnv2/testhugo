@@ -1,0 +1,196 @@
+{{define "main"}}
+<section
+  id="header"
+  class="cta"
+  style="
+    background-image: url('{{relURL .Params.imgBackground}}');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  "
+>
+  <div class="cta-content">
+    <div class="container text-right">
+      <h1
+        class="text-capitalize text-center"
+        data-aos="fade-down"
+        data-aos-duration="500"
+        id="title-header-event"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-style: normal;
+          font-size: 30px;
+          color: rgb(255, 255, 255);
+        "
+      >
+        {{.Params.header}}
+      </h1>
+      <p
+        class="text-center"
+        data-aos="fade-down"
+        data-aos-duration="500"
+        id="text-header-event"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          margin-bottom: 0px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        "
+      >
+        {{.Params.desc}}
+      </p>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+<div class="card">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs" id="nav-events" role="tablist">
+      {{range .Params.tabs}}
+      <li class="nav-item">
+        <a
+          class="nav-link {{if eq .id "item-1-1-tab"}} active text-right {{else}} text-left{{end}}"
+          id="{{.id}}"
+          data-toggle="tab"
+          role="tab"
+          aria-controls="{{.controls}}"
+          aria-selected="{{.selected}}"
+          href="#{{.controls}}"
+          style="
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 18px;
+            text-align: center;
+          "
+        >
+          {{.title}}
+        </a>
+      </li>
+      {{end}}
+    </ul>
+  </div>
+  <div class="card-body">
+    <div id="nav-tabContent" class="tab-content">
+        {{range .Params.itemsTab}}
+      <div id="{{.id}}" class="tab-pane fade {{if eq .id "item-1-1"}}show active{{end}}" role="tabpanel" aria-labelledby="{{.id}}-tab">
+        <div>
+          <div class="container">
+            <div class="intro">
+              <h1
+                class="text-capitalize text-center"
+                style="
+                  color: #444444;
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 30px;
+                  font-weight: bold;
+                  font-style: normal;
+                  padding-top: 50px;
+                  padding-bottom: 10px;
+                "
+              >
+                {{.header}}
+              </h1>
+              <hr class="hr-title" />
+              <p
+                class="text-center"
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 14px;
+                  font-weight: normal;
+                  font-style: normal;
+                  color: #444444;
+                  padding-bottom: 50px;
+                  padding-top: 10px;
+                "
+              >
+               {{.desc}}
+              </p>
+            </div>
+            <div class="row projects">
+                {{range .items}}
+              <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-bottom: 20px;">
+                <div class="row">
+                  <div class="col-md-12 col-lg-4">
+                    <a href="#">
+                      <img class="img-fluid" id="images-events" src="{{relURL .image}}" />
+                    </a>
+                  </div>
+                  <div class="col">
+                    <h3
+                      id="heading-events"
+                      class="name"
+                      style="
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: bold;
+                        font-style: normal;
+                      "
+                    >
+                     {{.title}}
+                    </h3>
+                    <p
+                      class="title"
+                      style="
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 15px;
+                        color: #00a9ff;
+                        margin-bottom: 5px;
+                        font-weight: normal;
+                        font-style: normal;
+                      "
+                    >
+                      <i class="fa fa-map-marker"></i>
+                      &nbsp;{{.addr}}
+                      <br />
+                    </p>
+                    <p
+                      class="description"
+                      style="
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 15px;
+                        margin-bottom: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                      "
+                    >
+                      {{.desc}}
+                    </p>
+                    <a
+                      class="btn btn-success btn-sm"
+                      role="button"
+                      id="btn-report"
+                      style="
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 16px;
+                        font-weight: bold;
+                        font-style: normal;
+                      "
+                      href="{{.url}}"
+                      target="_blank"
+                    >
+                      {{i18n "more"}}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <hr id="hr-events" />
+              </div>
+              {{end}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>
+{{end}}

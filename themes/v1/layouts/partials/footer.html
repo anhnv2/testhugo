@@ -1,0 +1,118 @@
+<div class="footer-clean" style="background-color: #1f1f1f;">
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 text-center text-lg-left text-xl-left item social">
+          <p
+            class="copyright"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-size: 12px;
+              font-weight: bold;
+              font-style: normal;
+              color: #ffffff;
+            "
+          >
+            {{.Site.Copyright}}
+            <br />
+          </p>
+          <a href="https://www.facebook.com/adsota" target="_blank"><i class="fa fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/company/adsota/about/" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+          <a href="https://twitter.com/Adsota" target="_blank"><i class="fa fa-twitter-square"></i></a>
+        </div>
+        {{range .Site.Menus.main}}
+        <div class="col-sm-3 col-md-2 text-sm-center align-self-center item">
+          <ul>
+            <li>
+              <a
+                class="text-uppercase"
+                style="
+                  font-family: 'Open Sans', sans-serif;
+                  font-size: 14px;
+                  color: rgb(255, 255, 255);
+                  font-weight: bold;
+                  font-style: normal;
+                  letter-spacing: 1px;
+                "
+                target="{{if eq .URL "https://blog.adsota.com/"}}_blank{{end}}"
+                href="{{.URL}}"
+              >
+              {{ i18n (printf "menu-%v" .Identifier) }}
+                <br />
+              </a>
+            </li>
+          </ul>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+
+<!-- jQuery scrollSpeed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+<script>
+  $(function() {
+    jQuery.scrollSpeed(100, 800);
+  });
+</script>
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-2 position-relative">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <a target="_blank" href="https://www.slideshare.net/AdsotaAds/covid19-crisis-impact-and-recovery">
+          <img class="w-100" src="{{ relURL `img/report/covid-19-crisis-popup-en.jpg` }}" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ relURL `js/jquery.min.js`}}"></script>
+<script src="{{ relURL `bootstrap/js/bootstrap.min.js`}}"></script>
+<script src="{{ relURL `js/bs-animation.js`}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<script src="{{ relURL `js/smoothproducts.min.js`}}"></script>
+<script src="{{ relURL `js/-Filterable-Cards-.js`}}"></script>
+<script src="{{ relURL `js/Gallery-FancyBox-BS4.js`}}"></script>
+<script src="{{ relURL `js/theme.js`}}"></script>
+<script src="{{ relURL `js/--mp---Multiple-items-slider-responsive-1.js`}}"></script>
+<script src="{{ relURL `js/--mp---Multiple-items-slider-responsive.js`}}"></script>
+<script src="{{ relURL `js/-Fixed-Navbar-start-with-transparency-background-BS4-.js`}}"></script>
+<script src="{{ relURL `js/Card-hover-affect-2.js`}}"></script>
+<script src="{{ relURL `js/Faq-by-pomdre.js`}}"></script>
+<script src="{{ relURL `js/Filter-Gallery-BS4.js`}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<script src="{{ relURL `js/Logo-Clients-BS4-1.js`}}"></script>
+<!-- <script src="{{ relURL `js/Logo-Clients-BS4-2.js`}}"></script> -->
+<script src="{{ relURL `js/Logo-Clients-BS4-3.js`}}"></script>
+<!-- <script src="{{ relURL `js/Logo-Clients-BS4.js`}}"></script> -->
+<script src="{{ relURL `js/Scroll-Effect.js`}}"></script>
+
+<!-- JS, Popper.js, and jQuery -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+<script>
+  $(document).ready(function () {
+    var now = new Date();
+    var d = now.getFullYear() * 10000 + 100 * (now.getMonth() + 1) + now.getDate();
+    if (d < 20200700) {
+      setTimeout(function () {
+        $('#popupModal').modal('show');
+      }, 500);
+    }
+  });
+</script>

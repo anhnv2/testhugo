@@ -1,0 +1,126 @@
+.intro1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding-top: 16px; }
+
+.intro2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 30px; }
+
+#popupModal .modal-body .close {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  background: white;
+  right: 8px;
+  top: 8px; }
+
+.title-new {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  height: 95px;
+  line-height: 1.6; }
+
+.main-menu {
+  border-bottom: none !important;
+  margin: 2px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal; }
+
+.resources {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-image: url("../../img/bg-home.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  font-size: 1.5rem; }
+  .resources .btn-link {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: none; }
+  .resources .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline; }
+  .resources .unhidden-overflow {
+    overflow: visible; }
+  @media screen and (max-width: 768px) {
+    .resources html {
+      font-size: 0.8rem; } }
+  .resources #header h1 {
+    font-size: 2rem; }
+  .resources .card-section .card-img {
+    /* padding: 1.25rem; */ }
+  .resources .card-section > .card-body > .card-title {
+    padding-bottom: 0.8rem;
+    background: #50e5eb;
+    background: linear-gradient(90deg, #50e5eb 0%, #00a9ff 100%);
+    background-size: 100px 3px;
+    background-repeat: no-repeat;
+    background-position: bottom; }
+  .resources .card-section .card {
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    min-height: 150px; }
+  .resources .card-deck .card-img {
+    border-radius: 0.25rem 0.25rem 0 0; }
+  .resources .card-body {
+    padding: 1rem; }
+  .resources .image-logos {
+    max-height: 75px; }
+  .resources .profileImage {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.75s ease;
+    backface-visibility: hidden; }
+  .resources .middle {
+    transition: 0.75s ease;
+    opacity: 0; }
+  .resources .profiles-middle {
+    position: absolute;
+    bottom: 10px; }
+  .resources .reports-middle {
+    position: absolute;
+    bottom: 23%; }
+  .resources .hoverCard {
+    overflow: hidden; }
+  .resources .reportsImage {
+    transition: opacity 1s, transform 1s; }
+  .resources .hoverCard:hover .profileImage {
+    opacity: 0.4;
+    transform: translate3d(0, -15px, 0); }
+  .resources .hoverCard:hover .reportsImage {
+    opacity: 0.4;
+    transform: scale3d(1.1, 1.1, 1); }
+  .resources .hoverCard:hover .middle {
+    opacity: 0.75;
+    transform: translate3d(0, -60px, 0px); }
+  .resources .card-logo .col-md-6 {
+    margin-bottom: 0.8rem; }
+  @media (max-width: 991.98px) {
+    .resources .profiles-middle {
+      bottom: 10px; } }
+  @media (max-width: 767.98px) {
+    .resources .reports-middle {
+      bottom: 0; }
+    .resources .profiles-middle {
+      bottom: 10px; } }
+  @media (max-width: 575.98px) {
+    .resources .hoverCard:hover .profileImage {
+      opacity: 0.4;
+      transform: scale3d(1.1, 1.1, 1); }
+    .resources .reports-middle {
+      bottom: 10px; }
+    .resources .profiles-middle {
+      bottom: 10px; } }

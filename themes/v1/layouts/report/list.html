@@ -1,0 +1,80 @@
+{{define "main"}}
+<section
+  id="header"
+  style="
+    background-image: url('{{relURL .Params.imgBackground}}');
+    background-position: top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin-bottom: -100px !important;
+  "
+></section>
+<div class="article-list" style="padding-top: 30px;">
+  <div class="container">
+    <div class="intro">
+      <h1
+        class="text-capitalize text-center"
+        style="
+          color: #444444;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          font-style: normal;
+          padding-top: 60px;
+          padding-bottom: 10px;
+        "
+      >
+        {{.Params.header}}
+      </h1>
+      <hr class="hr-title" />
+      <p
+        class="text-center"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-size: 15px;
+          font-weight: normal;
+          font-style: normal;
+          color: #444444;
+          padding-bottom: 50px;
+          padding-top: 10px;
+        "
+      >
+        {{.Params.desc}}
+      </p>
+    </div>
+    <div class="row articles" id="report-bottom" style="padding-bottom: 0px;">
+      {{range .Params.reportItems}}
+      <div class="col-sm-6 col-md-6 col-lg-3 item d-flex flex-column">
+        <div class="zoomin frame" style="width: 100%; height: auto;">
+          <img style="width: 100%; height: auto;" src="{{ relURL .image}}" />
+        </div>
+        <h3
+          style="
+            font-family: 'Open Sans', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 16px;
+            color: #444444;
+            padding-bottom: 48px;
+            padding-top: 20px;
+          "
+        >
+          {{.title}}
+        </h3>
+
+        <a
+          class="btn btn-success btn-sm"
+          role="button"
+          id="btn-report"
+          href="{{ relURL .download}}"
+          target="_blank"
+          style="font-family: 'Open Sans', sans-serif; font-weight: normal; font-style: normal; font-size: 14px;"
+        >
+          {{i18n "download"}}
+        </a>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>
+{{end}}

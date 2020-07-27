@@ -1,0 +1,296 @@
+{{ define "main" }}
+<section
+  id="header"
+  class="cta"
+  style="
+    background-image: url({{relURL .Params.imgBackground}});
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 270px;
+    padding-top: 200px;
+  "
+>
+  <div class="cta-content">
+    <div class="container text-right">
+      <h1
+        class="text-uppercase text-center"
+        data-aos="fade-down"
+        data-aos-duration="500"
+        id="title-header-ota"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-style: normal;
+          font-size: 30px;
+          color: rgb(255, 255, 255);
+        "
+      >
+        {{.Params.header}}
+      </h1>
+      <p
+        class="text-center"
+        data-aos="fade-down"
+        data-aos-duration="500"
+        id="text-header-ota"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          color: rgb(255, 255, 255);
+          font-size: 18px;
+          margin-bottom: 0px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        "
+      >
+        {{.Params.desc}}
+      </p>
+      <p
+        class="text-capitalize text-center"
+        data-aos="fade-down"
+        data-aos-duration="500"
+        id="text-header-ota"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-weight: normal;
+          font-style: normal;
+          color: rgb(255, 255, 255);
+          font-size: 20px;
+          margin-bottom: 0px;
+          padding-top: 20px;
+        "
+      >
+        <a
+          class="btn btn-link text-uppercase border-pretty"
+          role="button"
+          href="https://ota.network/"
+          style="
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 16px;
+            padding-top: 10px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+          "
+          target="_blank"
+        >
+          {{i18n "more"}}&nbsp;
+          <i class="icon ion-android-arrow-forward"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+<div class="features-boxed" style="background-color: rgb(255, 255, 255);">
+  <div class="container">
+    <div class="intro">
+      <h1
+        class="text-capitalize text-center"
+        style="
+          color: #444444;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          font-style: normal;
+          padding-top: 60px;
+          padding-bottom: 20px;
+        "
+      >
+        {{.Params.features.header}}
+      </h1>
+      <hr class="hr-title" />
+    </div>
+    <div class="row justify-content-center features" style="padding-bottom: 0px; padding-top: 0px;">
+      {{range .Params.features.items}}
+      <div class="col-md-12 col-lg-4 item">
+        <div class="box">
+          <i class="{{printf "%s" .icon}} d-xl-flex justify-content-xl-start icon" style="color: rgb(0, 169, 255);"></i>
+          <h3
+            class="text-uppercase text-center text-xl-left name"
+            id="title-ota-wwd"
+            style="font-family: 'Open Sans', sans-serif; font-weight: bold; font-style: normal; font-size: 15px;"
+          >
+            {{.title}}
+          </h3>
+          <p
+            class="text-center text-xl-left description"
+            style="
+              color: #444444;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 14px;
+              font-weight: normal;
+              font-style: normal;
+            "
+          >
+            {{.desc}}
+          </p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>
+<section style="padding-top: 50px; padding-bottom: 50px; background-color: #f2fbff;">
+  <div class="container">
+    <h1
+      class="text-capitalize text-center"
+      style="
+        color: #444444;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: normal;
+        padding-top: 60px;
+        padding-bottom: 20px;
+      "
+    >
+      {{.Params.offerings.header}}
+    </h1>
+    <hr class="hr-title" />
+    <div class="row" id="app-features-row" style="padding-top: 40px;">
+      <div class="col-sm-12 col-lg-4 app-features-list afl-left">
+        {{range .Params.offerings.leftitems}}
+        <div>
+          <div class="row" style="padding-bottom: 40px;">
+            <div class="col-sm-10 col-md-8 col-lg-9 text-right align-self-center" id="reco">
+              <h3
+                class="name"
+                style="
+                  font-size: 18px;
+                  font-family: 'Open Sans', sans-serif;
+                  font-weight: normal;
+                  font-style: normal;
+                  color: #444444;
+                "
+              >
+                {{.title}}
+              </h3>
+            </div>
+            <div
+              class="col-sm-2 col-md-4 col-lg-3 text-center d-sm-flex d-lg-flex d-xl-flex align-self-center justify-content-sm-center justify-content-lg-center justify-content-xl-center"
+            >
+              <i
+                class="{{printf "%s" .icon}} bg-primary border rounded-circle border-primary icon"
+                style="
+                  font-size: 50px;
+                  color: rgb(255, 255, 255);
+                  padding-top: 15px;
+                  padding-right: 15px;
+                  padding-bottom: 15px;
+                  padding-left: 15px;
+                "
+              ></i>
+            </div>
+          </div>
+        </div>
+        {{end}}
+      </div>
+      <div class="col-sm-12 col-lg-4 app-features-list">
+        <div class="iphone-mockup"><img class="device" src="{{ relURL .Params.offerings.picture}}" /></div>
+      </div>
+      <div class="col-sm-12 col-lg-4 app-features-list afl-left">
+        {{range .Params.offerings.rightitems}}
+        <div>
+          <div class="row" style="padding-bottom: 40px;">
+            <div
+              class="col-sm-2 col-md-4 col-lg-3 text-center d-sm-flex d-lg-flex d-xl-flex align-self-center justify-content-sm-center justify-content-lg-center justify-content-xl-center"
+            >
+              <i
+                class="{{printf "%s" .icon}} bg-primary border rounded-circle border-primary icon"
+                style="
+                  font-size: 50px;
+                  color: rgb(255, 255, 255);
+                  padding-top: 15px;
+                  padding-right: 15px;
+                  padding-bottom: 15px;
+                  padding-left: 15px;
+                "
+              ></i>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-9 text-left align-self-center" id="reco2">
+              <h3
+                class="name"
+                style="
+                  font-size: 18px;
+                  font-family: 'Open Sans', sans-serif;
+                  font-weight: normal;
+                  font-style: normal;
+                  color: #444444;
+                "
+              >
+                {{.title}}
+              </h3>
+            </div>
+          </div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>
+<section id="features" class="features" style="padding-top: 0px; padding-bottom: 60px;">
+  <div class="container">
+    <div class="intro">
+      <h1
+        class="text-capitalize text-center"
+        style="
+          color: #444444;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          font-style: normal;
+          padding-top: 90px;
+          padding-bottom: 20px;
+        "
+      >
+        {{.Params.ressons.header}}
+      </h1>
+      <hr class="hr-title" />
+    </div>
+    <div id="ota-title" class="row" style="margin-top: -40px;">
+      <div class="col-md-12 col-lg-4 my-auto">
+        <div class="device-container">
+          <div class="device-mockup iphone6_plus portrait white">
+            <div class="device" style="background-image: url({{relURL .Params.ressons.imgIphoneCover}});">
+              <div class="screen"><img class="img-fluid" src="{{relURL .Params.ressons.imgIphoneScreen}}" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 my-auto">
+        <div class="container-fluid">
+          <div class="row">
+            {{range .Params.ressons.items}}
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="feature-item">
+                <i class="{{printf "%s" .icon}} text-primary"></i>
+                <h3
+                  class="text-capitalize"
+                  style="font-family: 'Open Sans', sans-serif; font-style: normal; font-weight: bold; font-size: 28px;"
+                >
+                  {{.title}}
+                </h3>
+                <p
+                  style="
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 15px;
+                  "
+                >
+                  {{.desc}}
+                </p>
+              </div>
+            </div>
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

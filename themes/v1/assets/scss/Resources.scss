@@ -1,0 +1,125 @@
+.resources {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-image: url('../../img/bg-home.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  font-size: 1.5rem;
+
+  .btn-link {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: none;
+  }
+  .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  .unhidden-overflow {
+    overflow: visible;
+  }
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 0.8rem;
+    }
+  }
+  #header h1 {
+    font-size: 2rem;
+  }
+  .card-section .card-img {
+    /* padding: 1.25rem; */
+  }
+  .card-section > .card-body > .card-title {
+    padding-bottom: 0.8rem;
+    background: rgb(80, 229, 235);
+    background: linear-gradient(90deg, rgba(80, 229, 235, 1) 0%, rgba(0, 169, 255, 1) 100%);
+    background-size: 100px 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .card-section .card {
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    min-height: 150px;
+  }
+  .card-deck .card-img {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+  .card-body {
+    padding: 1rem;
+  }
+  .image-logos {
+    max-height: 75px;
+  }
+  .profileImage {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.75s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: 0.75s ease;
+    opacity: 0;
+  }
+
+  .profiles-middle {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .reports-middle {
+    position: absolute;
+    bottom: 23%;
+  }
+  .hoverCard {
+    overflow: hidden;
+  }
+  .reportsImage {
+    transition: opacity 1s, transform 1s;
+  }
+
+  .hoverCard:hover .profileImage {
+    opacity: 0.4;
+    transform: translate3d(0, -15px, 0);
+  }
+
+  .hoverCard:hover .reportsImage {
+    opacity: 0.4;
+    transform: scale3d(1.1, 1.1, 1);
+  }
+
+  .hoverCard:hover .middle {
+    opacity: 0.75;
+    transform: translate3d(0, -60px, 0px);
+  }
+  .card-logo .col-md-6 {
+    margin-bottom: 0.8rem;
+  }
+  @media (max-width: 991.98px) {
+    .profiles-middle {
+      bottom: 10px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .reports-middle {
+      bottom: 0;
+    }
+    .profiles-middle {
+      bottom: 10px;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .hoverCard:hover .profileImage {
+      opacity: 0.4;
+      transform: scale3d(1.1, 1.1, 1);
+    }
+
+    .reports-middle {
+      bottom: 10px;
+    }
+    .profiles-middle {
+      bottom: 10px;
+    }
+  }
+}

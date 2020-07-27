@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://adsota.com/vi/aboutus.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/aboutus-vi.html</loc>
+  </url>
+  <!-- <url>
+    <loc>https://adsota.com/vi/adexchange.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/adexchange-vi.html</loc>
+  </url> -->
+  <url>
+    <loc>https://adsota.com/vi/adservice.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/adservice-vi.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/events.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/events-vi.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/gamehub.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/gamehub-vi.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/index.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/index-vi.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/otanetwork.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/otanetwork-vi.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/report.html</loc>
+  </url>
+  <url>
+    <loc>https://adsota.com/vi/report-vi.html</loc>
+  </url>
+</urlset>

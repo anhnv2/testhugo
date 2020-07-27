@@ -1,0 +1,37 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Adsota | Specializing in driving user & maximizing highly qualified sales leads for businesses
+theme: v1
+languages:
+  vi:
+    languageName: Tiếng Việt
+    weight: 1
+  en:
+    languageName: English
+    weight: 2
+defaultContentLanguage: en
+menus:
+  main:
+    - identifier: about-us
+      url: /aboutus
+      weight: 5
+    - identifier: events
+      url: /events
+      weight: 6
+    - identifier: report
+      url: /report
+      weight: 7
+    - identifier: blog
+      url: https://blog.adsota.com/
+      weight: 8
+  solution:
+    - identifier: ad-service
+      url: /adservice
+      weight: 2
+    - identifier: ota-network
+      url: /otanetwork
+      weight: 3
+    - identifier: game-hub
+      url: /gamehub
+      weight: 4
+copyright: © 2019 ADSOTA, INC.

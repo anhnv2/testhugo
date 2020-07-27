@@ -1,0 +1,297 @@
+{{define "main"}}
+<section
+  id="header"
+  class="cta"
+  style="
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    padding-top: 130px;
+    background-image: url('{{relURL .Params.imgBackground}}');
+  "
+>
+  <div class="cta-content">
+    <div class="container text-right">
+      <div class="row">
+        <div
+          class="col-lg-5 text-center text-sm-center text-md-center text-lg-center text-xl-center align-self-center"
+          data-aos="fade-right"
+          data-aos-duration="550"
+          id="img-about"
+        >
+          <img id="img-header-about" src="{{relURL .Params.image}}" />
+        </div>
+        <div class="col-lg-7">
+          <h1
+            class="text-uppercase text-right"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            id="title-header"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              font-style: normal;
+              font-size: 34px;
+              color: rgb(255, 255, 255);
+            "
+          >
+            {{.Params.header}}
+          </h1>
+          <p
+            class="text-right"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            id="text-header1"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              font-style: normal;
+              color: rgb(255, 255, 255);
+              font-size: 20px;
+              margin-bottom: 12px;
+            "
+          >
+            {{.Params.intro}}
+          </p>
+          <p
+            class="text-right"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            id="text-header"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              color: rgb(255, 255, 255);
+              font-size: 15px;
+              margin-bottom: 0px;
+            "
+          >
+            {{.Params.desc}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+<div class="highlight-phone" style="background-color: rgb(255, 255, 255);">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 d-md-flex d-xl-flex justify-content-md-center justify-content-xl-center">
+        <div class="intro">
+          <h1
+            class="text-capitalize text-center"
+            style="
+              color: #444444;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 30px;
+              font-weight: bold;
+              font-style: normal;
+              padding-bottom: 10px;
+              padding-top: 20px;
+            "
+          >
+            {{.Params.mission.header}}
+          </h1>
+          <hr class="hr-title" />
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 item">
+        <div class="box">
+          <i
+            class="{{printf "%s" .Params.mission.icon}} d-xl-flex justify-content-xl-start icon"
+            style="color: rgb(0, 169, 255); font-size: 50px; padding-bottom: 20px;"
+          ></i>
+          <p
+            class="text-justify description"
+            style="
+              color: #444444;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 16px;
+              font-weight: normal;
+              font-style: normal;
+            "
+          >
+            {{.Params.mission.desc1}}
+          </p>
+        </div>
+        <div class="box">
+          <p
+            class="text-justify description"
+            style="
+              color: #444444;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 16px;
+              font-weight: normal;
+              font-style: normal;
+            "
+          >
+            {{.Params.mission.desc2}}
+          </p>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-6 text-center d-flex d-sm-flex d-md-flex justify-content-center">
+        <div class="imac-mockup" style="width: 500px;">
+          <img class="device" src="{{relURL .Params.mission.image}}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="giatricotloi" style="padding-top: 80px; padding-bottom: 100px;">
+  <div class="container">
+    <div class="col d-xl-flex justify-content-xl-center">
+      <div class="intro">
+        <h1
+          class="text-capitalize text-center"
+          style="
+            color: #444444;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: normal;
+            padding-bottom: 10px;
+            padding-top: 20px;
+          "
+        >
+          {{.Params.coreValues.header}}
+        </h1>
+        <hr class="hr-title" />
+        <p
+          class="text-center"
+          style="
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            color: #444444;
+            padding-bottom: 50px;
+            padding-top: 15px;
+          "
+        >
+          {{.Params.coreValues.desc}}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 text-center d-xl-flex justify-content-xl-center">
+        <img class="d-lg-flex" src="{{ relURL .Params.coreValues.image}}" style="height: 262px;" />
+      </div>
+      <div class="col-md-6 col-lg-8">
+        {{range .Params.coreValues.items}}
+        <div id="{{printf "%s" .icon}}" class="faqelement">
+          <button
+            class="btn btn-primary faq on"
+            type="button"
+            style="
+              box-shadow: none;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              font-style: normal;
+              font-size: 20px;
+              color: #fff;
+              background: -webkit-linear-gradient(left, #50e5eb 0%, #00a9ff 100%);
+              border-radius: 30px;
+            "
+          >
+            {{.title}}
+          </button>
+          <div class="panel">
+            <p
+              class="card-text"
+              style="
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                padding-top: 20px;
+                padding-bottom: 20px;
+              "
+            >
+              {{.desc}}
+            </p>
+          </div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>
+<div class="features-blue" style="background-color: #f2fbff;">
+  <div class="container">
+    <div class="intro">
+      <h1
+        class="text-capitalize text-center"
+        style="
+          color: #444444;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          font-style: normal;
+          padding-bottom: 10px;
+          padding-top: 80px;
+        "
+      >
+        {{.Params.contact.header}}
+      </h1>
+      <hr class="hr-title" />
+      <p
+        class="text-center"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+          font-weight: normal;
+          font-style: normal;
+          color: #444444;
+          padding-top: 15px;
+        "
+      >
+        {{.Params.contact.desc}}
+      </p>
+    </div>
+    <div class="row features">
+      {{range .Params.contact.items}}
+      <div class="col-sm-12 col-md-4 item" style="padding-left: 10px;">
+        <div class="text-center" id="box-contact">
+          <i class="{{printf "%s" .icon}}" style="color: rgb(255, 255, 255); font-size: 40px;"></i>
+          <h3
+            class="text-capitalize name mt-2"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: bold;
+              color: rgb(255, 255, 255);
+              padding-top: 10px;
+            "
+          >
+            {{.title}}
+          </h3>
+          <p
+            class="description"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-size: 14px;
+              font-weight: normal;
+              font-style: normal;
+              color: #ffffff;
+              margin-top: -10px;
+            "
+          >
+            {{.desc}}
+          </p>
+        </div>
+      </div>
+      {{end}}
+      
+    </div>
+    <div class="row features" style="padding-top: 20px;">
+      <div class="col" style="padding-bottom: 20px;">
+        <iframe allowfullscreen frameborder="0" width="100%" height="450" src="{{.Params.map.url}}"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}

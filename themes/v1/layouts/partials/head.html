@@ -1,0 +1,88 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  {{ $og_title := or (.Param "title") .Site.Title }} {{ $og_desc := or (.Page.Description) $og_title }}
+  <title>{{ $og_title }}</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ relURL `img/share-en.jpg`}}" />
+  <meta name="description" content="{{ $og_desc }}" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ relURL `img/favicon/favicon-16x16.png` }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ relURL `img/favicon/favicon-32x32.png` }}" />
+  <link rel="icon" type="image/png" sizes="180x180" href="{{ relURL `img/favicon/apple-touch-icon-180x180.png` }}" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ relURL `img/favicon/favicon-192x192.png` }}" />
+  <link rel="stylesheet" href="{{ relURL `bootstrap/css/bootstrap.min.css` }} " />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=vietnamese"
+  />
+
+  <link rel="stylesheet" href="{{ relURL `fonts/fontawesome-all.min.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `fonts/font-awesome.min.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `fonts/ionicons.min.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `fonts/simple-line-icons.min.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `fonts/fontawesome5-overrides.min.css` }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="{{ relURL `css/--mp---Multiple-items-slider-responsive.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/-Fixed-Navbar-start-with-transparency-background-BS4-.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/4-SERVICE-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/About-Adsota-Agency-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/App-Features-3column-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Articale-List-With-Image-Zoom.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Background-motion1-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Background-motion1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Block-3-Row1-Col3.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Brands.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Calendar-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Card-Group-Classic-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Card-Group-Classic.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Card-hover-affect-2.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Card-images-Adsota-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Contact-Map-BS4-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Contact-Map-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Contact-Us-OTA-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Core-Value-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Corporate-Footer-Clean.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Dark-Footer.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Faq-by-pomdre.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Features-2-OTA-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Features-Blue.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Features-Boxed-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Features-Boxed.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Features-Clean.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Features-OTA-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/App-Features-3column-BS4-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Mockup-iMac.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/FilterableCards.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/footer-appota18-09.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Footer-Clean.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Gallery-FancyBox-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Gallery-Lightbox-Bs4-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Gallery-Lightbox-Bs4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Highlight-Blue.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Highlight-Phone.css` }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" />
+  <link rel="stylesheet" href="{{ relURL `css/List-Events-Full-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Logo-Clients-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Map-Appota-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Minitab-Adsota-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Newsletter-Subscription-Form.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Process-Steps-Bs4-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Process-Steps-Bs4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Scroll-Effect.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Services-ADSOTA-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Slider-laptop-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Start-Text-Left-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Team-Clean-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Team-Clean.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Team-Icon-BS4-1.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Team-Icon-BS4.css` }}" />
+  <link rel="stylesheet" href="{{ relURL `css/Video-Header-Background-BS4.css` }}" />
+  <link rel="stylesheet" href="{{relURL `css/main.css`}}" />
+  {{ $css := resources.Get "scss/theme.scss" | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}?v={{ readFile `VERSION` | urlize }}" />
+</head>

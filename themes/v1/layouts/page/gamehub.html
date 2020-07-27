@@ -1,0 +1,131 @@
+{{define "main"}}
+<section
+  id="header"
+  class="cta"
+  style="
+    background-image: url('{{relURL .Params.imgBackground}}');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    padding-top: 160px;
+  "
+>
+  <div class="cta-content">
+    <div class="container text-right">
+      <div class="row">
+        <div class="col-lg-7 align-self-center">
+          <h1
+            class="text-uppercase text-left"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            id="title-header-gamehub"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              font-style: normal;
+              font-size: 30px;
+              color: rgb(255, 255, 255);
+            "
+          >
+            {{.Params.header}}
+          </h1>
+          <p
+            class="text-left"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            id="text-header-gamehub"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              color: rgb(255, 255, 255);
+              font-size: 18px;
+              margin-bottom: 0px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+            "
+          >
+            {{.Params.desc}}
+          </p>
+          <p
+            class="text-capitalize text-left"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            id="text-header-gamehub"
+            style="
+              font-family: 'Open Sans', sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              color: rgb(255, 255, 255);
+              font-size: 20px;
+              margin-bottom: 0px;
+              padding-top: 20px;
+            "
+          >
+            <a
+              class="btn btn-link text-uppercase border-pretty"
+              role="button"
+              href="http://gamehub.vn/"
+              style="
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 16px;
+                padding-top: 10px;
+                padding-right: 30px;
+                padding-bottom: 10px;
+                padding-left: 30px;
+              "
+              target="_blank"
+            >
+              {{i18n "more"}}&nbsp;
+              <i class="icon ion-android-arrow-forward"></i>
+            </a>
+          </p>
+        </div>
+        <div
+          class="col-lg-5 text-center text-sm-center text-md-center text-lg-center text-xl-center align-self-center"
+          data-aos="fade-left"
+          data-aos-duration="550"
+        >
+          <img id="img-header-gamehub" src="{{relURL .Params.pictureGamehub}}" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</section>
+<div class="container" style="margin-top: 80px;">
+  {{range .Params.gamehubItems}}
+  <div class="row">
+    <div class="col-md-12 col-lg-7">
+      <a href="#"></a>
+      <img class="rounded img-fluid" src="{{relURL .picture}}" alt="placeholder" />
+    </div>
+    <div class="col-md-12 col-lg-5">
+      <h2
+        id="heading-gamehub"
+        style="font-family: 'Open Sans', sans-serif; font-size: 22px; font-weight: bold; font-style: normal;"
+      >
+        {{.title}}
+      </h2>
+      <p
+        class="lead text-justify mb-0"
+        style="
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+          padding-bottom: 14px;
+          font-weight: normal;
+          font-style: normal;
+          padding-top: 10px;
+        "
+      >
+        {{.desc}}
+      </p>
+    </div>
+  </div>
+  <hr />
+  {{end}}
+</div>
+{{end}}

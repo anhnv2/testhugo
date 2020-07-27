@@ -1,0 +1,30 @@
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav > li > a:focus, .nav > li > a {
+  text-decoration: none;
+  margin: 0;
+  line-height: normal;
+  border: none;
+  border-bottom: solid 5px #00a9ff;
+}
+
+.tab-content {
+  padding: 10px;
+}
+
+.nav-tabs > li > a {
+  border-radius: 0;
+  margin: 0;
+  line-height: normal;
+  color: black;
+  font-size: 20px;
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+  width: 49%;
+}
+

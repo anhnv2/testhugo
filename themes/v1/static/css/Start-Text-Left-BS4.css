@@ -1,0 +1,213 @@
+section.cta .cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width:768px) {
+  section.cta .cta-content h2 {
+    font-size: 80px;
+  }
+}
+
+section.cta .cta-content h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+section h2 {
+  font-size: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Catamaran,Helvetica,Arial,"sans-serif";
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.btn.active, .btn:active, .btn:focus, .btn:hover {
+  color: #444444;
+}
+
+@media (max-width: 420px) {
+  #img-header-about {
+    width: 206px!important;
+    height: auto;
+    padding-top: 64px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+  #img-header-about {
+    width: 236px!important;
+    height: auto;
+    margin-bottom: 3px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  #img-header-about {
+    width: 260px!important;
+    height: auto;
+    margin-bottom: 45px;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 420px) {
+  #img-header-gamehub {
+    width: 237px!important;
+    height: auto;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 576px) {
+  #img-header-gamehub {
+    width: 290px!important;
+    height: auto;
+    margin-top: 33px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #img-header-gamehub {
+    width: 341px!important;
+    height: auto;
+    margin-top: 62px;
+  }
+}
+
+@media (max-width: 420px) {
+  #img-header-adxchange {
+    width: 163px!important;
+    height: auto;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 576px) {
+  #img-header-adxchange {
+    width: 203px!important;
+    height: auto;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #img-header-adxchange {
+    width: 300px!important;
+    height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  #img-header-adservice {
+    width: 251px!important;
+    height: auto;
+    margin-top: 37px;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 576px) {
+  #img-header-adservice {
+    width: 304px!important;
+    height: auto;
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #img-header-adservice {
+    width: 300px!important;
+    height: auto;
+    margin-top: 69px;
+  }
+}
+
+@media (max-width: 420px) {
+  #img-about {
+    padding-bottom: 70px;
+    margin-top: -75px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+  #img-about {
+    padding-bottom: 70px;
+    margin-top: -75px;
+  }
+}
+
+@media (max-width: 420px) {
+  #img-adx {
+    margin-top: -100px;
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 576px) {
+  #img-adx {
+    margin-top: -100px;
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #img-adx {
+    margin-top: -50px;
+    margin-bottom: 87px;
+  }
+}
+
+@media (max-width: 420px) {
+  #our-solution1 {
+    padding-top: 74px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 576px) {
+  #our-solution1 {
+    padding-top: 90px!important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 760px) {
+  #our-solution1 {
+    padding-top: 12px!important;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 989px) {
+  #our-solution1 {
+    padding-top: 28px!important;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1100px) {
+  #our-solution1 {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #title-our2 {
+    padding-bottom: 20px;
+  }
+}
+

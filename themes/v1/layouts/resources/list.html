@@ -1,0 +1,201 @@
+{{define "main"}}
+<div class="resources">
+<section id="header" class="cta" style="padding-bottom: 100px; padding-top: 170px;">
+  <div class="cta-content">
+    <div class="container-md">
+      <div class="row mx-0">
+        <div class="col-lg-12" id="slogan-cover">
+          <h1
+            class="text-uppercase text-center mb-5 text-light font-weight-bold"
+            data-aos="fade-down"
+            data-aos-duration="500"
+            id="title-header"
+          >
+            {{.Params.header}}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container mb-5">
+  <div class="card card-section card-branding mb-3 border-0">
+    <div class="card-body mt-3">
+      <h3 class="heading card-title mb-5 text-center">{{.Params.branding.header}}</h3>
+      <div class="row">
+          {{range .Params.branding.items}}
+        <div class="col-md-6 mb-3 d-flex">
+          <a
+            class="text-decoration-none d-flex"
+            href="{{.url}}"
+            target="_blank"
+          >
+            <div class="card border-0 {{printf "%s" .class}}">
+              <img class="mw-100 card-img card-img-top" src="{{relURL .image}}" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-body">{{.title}}</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-section card-company mb-3 border-0">
+    <div class="card-body">
+      <h3 class="heading card-title mb-5 text-center">{{.Params.companyProfiles.header}}</h3>
+      <div class="row">
+        {{range .Params.companyProfiles.items}}
+        <div class="col-md-6 d-flex">
+            {{if .languages}}
+            {{else}} 
+            <a
+            class="text-decoration-none d-flex justify-content-center"
+            href="{{.url}}"
+            target="_blank"
+          >{{end}}
+          <div class="card mb-3 hoverCard">
+            <img class="mw-100 card-img-top card-img profileImage" src="{{relURL .image}}" alt="" />
+            {{if .languages}} <div class="middle profiles-middle w-100 text-center px-2">
+              {{range .languages}}<a
+                class="btn btn-dark text-white mt-1"
+                style="font-weight: 100;"
+                href="{{.url}}"
+                role="button"
+                target="_blank"
+              >
+                {{.title}}
+              </a>
+              {{end}}
+            </div>
+            {{end}}
+            <div class="card-body">
+              <h5 class="text-center card-title text-dark">{{.title}}</h5>
+            </div>
+          </div>
+          {{if .languages}}
+          {{else}} 
+        </a>{{end}}
+        </div>
+        {{end}}
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="card unhidden-overflow card-section card-logo mb-3 border-0">
+    <div class="card-body">
+      <h3 class="heading card-title text-center mb-5">{{.Params.logos.header}}</h3>
+      <div class="row card-deck unhidden-overflow">
+        {{range .Params.logos.items}}
+            <div class="col-sm-6 col-md-3 mb-3 p-0">
+              <div class="card rounded unhidden-overflow {{if .class}}{{printf "%s" .class}}{{end}}">
+                <div class="card-body text-center">
+                  <img class="mw-100 rounded mb-4 image-logos" src="{{.image}}" alt="" />
+                  <p class="card-text text-center {{if eq .class "bg-dark"}}{{printf "%s" "text-white"}}{{end}}"
+                  style="font-size: 16px;"
+                  >{{.title}}</p>
+                </div>
+                <div class="card-footer text-center">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-link text-decoration-none dropdown-toggle"
+                      style="font-weight: 100;"
+                      type="button"
+                      id="download-logo"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      {{i18n "download"}}
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="download-logo">
+                      {{range .download}}
+                      <a download class="dropdown-item" target="_blank" href="{{.url}}">
+                        {{.title}}
+                      </a>
+                      {{end}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{end}}
+          </div>
+    </div>
+  </div>
+
+  <div class="card card-section card-report mb-3 border-0">
+    <div class="card-body">
+      <h3 class="heading card-title mb-5 text-center">{{.Params.magazines.header}}</h3>
+      <div class="row justify-content-center">
+        {{ range .Params.magazines.items}}
+        <div class="col-md-6 d-flex {{printf "%s" .class}}">
+          <a
+            class="text-decoration-none d-flex justify-content-center"
+            href="{{.url}}"
+            target="_blank"
+          >
+            <div class="card">
+              <img class="mw-100 card-img-top card-img reportsImage" src="{{relURL .image}}" alt="" />
+              <div class="card-body">
+                <h5 class="text-center card-title text-body">
+                  {{.title}}
+                </h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+  <div class="card card-section card-report mb-3 border-0">
+    <div class="card-body">
+      <h3 class="heading card-title mb-5 text-center">{{.Params.reports.header}}</h3>
+      <div class="row">
+        {{range .Params.reports.items}}
+        <div class="col-md-6 col-lg-4 d-flex">
+          {{if .languages}} 
+          {{else}}
+          <a
+            class="text-decoration-none d-flex justify-content-center"
+            href="{{.url}}"
+            target="_blank"
+          >
+          {{end}}
+          <div class="card mb-3 hoverCard">
+            <img class="mw-100 card-img-top card-img reportsImage" src="{{relURL .image}}" alt="" />
+            {{if .languages}}<div class="middle reports-middle w-100 text-center">
+              {{range .languages}}
+              <a
+                class="btn btn-dark text-white text-decoration-none"
+                style="font-weight: 100;"
+                href="{{.url}}"
+                role="button"
+                target="_blank"
+              >
+                {{.title}}
+              </a>
+              {{end}}
+            </div>{{end}}
+            <div class="card-body">
+              <h5 class="text-center card-title text-dark">
+                {{.title}}
+              </h5>
+            </div>
+          </div>
+          {{if .languages}} 
+          {{else}}
+            </a>{{end}}
+        </div>
+        {{end}}
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{{end}}
