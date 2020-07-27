@@ -71,17 +71,14 @@ collections:
             name: magazines
             widget: object
             fields:
-              - label: Heading
-                name: header
-                widget: object
+              - label: Items
+                name: items
+                widget: list
+                label_singular: item
                 fields:
-                  - label: Items
-                    name: items
-                    widget: list
-                    label_singular: item
-                    fields:
-                      - { name: title, widget: string }
-                      - { name: url, widget: string }
+                  - { name: title, widget: string }
+                  - { name: image, widget: hidden }
+                  - { name: url, widget: string }
           - label: Reports
             name: reports
             widget: object
