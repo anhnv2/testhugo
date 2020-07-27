@@ -1,19 +1,5 @@
 ---
-title: 'Adsota Resources'
-date: 2020-07-21T09:13:28+07:00
 draft: true
-layout: resources
-header: A directory of our resources
-branding:
-  header: Branding Guidelines
-  items:
-    - title: Adsota Brand Guideline
-      image: img/resources/adsota-brand-guideline.jpg
-      url: https://store.appota.com/index.php/s/ZLZH5pgeGCwDT7n
-    - title: OTA Network Brand Guideline
-      image: img/resources/otanetwork-brand-guideline.jpg
-      url: https://store.appota.com/index.php/s/gDcZayjs3RJq9bT
-      class: align-items-stretch
 companyProfiles:
   header: Company Profiles
   items:
@@ -195,35 +181,41 @@ logos:
           url: https://appota.com/doc/Adsota/adsota_w.png
         - title: AI Vector
           url: https://appota.com/doc/Adsota/adsota.ai
-magazines:
-  header: E-magazines
+layout: resources
+header: A directory of our resources
+title: Adsota Resources, Hello world
+date: 2020-07-21T09:13:28+07:00
+branding:
+  header: Branding Guidelines
   items:
-    - title: 'E-magazine 01: Thích nghi với COVID-19 Ngành Bán lẻ và Thương mại điện tử '
-      url: https://store.appota.com/index.php/s/WfGox4A9MmKSAYZ
-      image: img/resources/e-magazine-1.jpg
-      class: mb-3 mb-md-0
-    - title: 'E-magazine 02: Thích nghi với COVID-19 Ngành F&B'
-      url: https://store.appota.com/index.php/s/Gm6KGP6ACeFD24S
-      image: img/resources/e-magazine-2.jpg
+    - title: Adsota Brand Guideline
+      image: img/resources/adsota-brand-guideline.jpg
+      url: https://store.appota.com/index.php/s/ZLZH5pgeGCwDT7n
+    - title: OTA Network Brand Guideline
+      image: img/resources/otanetwork-brand-guideline.jpg
+      url: https://store.appota.com/index.php/s/gDcZayjs3RJq9bT
+      class: align-items-stretch
+description: this is desc
 reports:
   header: Reports
   items:
     - image: img/report/covid-19-crisis.jpg
-      title: 'COVID-19 Crisis: Impact and Recovery in Vietnam (2020)'
+      title: "COVID-19 Crisis: Impact and Recovery in Vietnam (2020)"
       languages:
         - title: English
           url: https://store.appota.com/index.php/s/ErxSRnzPoSmQdEG
         - title: Vietnamese
           url: https://store.appota.com/index.php/s/ioZHESTSJsPNddW
     - image: img/report/report-2020-01.jpg
-      title: 'Vietnam Digital Advertising Report (H2 - 2019)'
+      title: Vietnam Digital Advertising Report (H2 - 2019)
       languages:
         - title: English
           url: https://store.appota.com/index.php/s/mtZpgwtYDeQzJRq
         - title: Vietnamese
           url: https://store.appota.com/index.php/s/moartt5EfcCfkP4
     - image: img/report/report-6.jpg
-      title: Vietnam Mobile App Advertising & Monetization Report - Holiday Seasons 2018
+      title: Vietnam Mobile App Advertising & Monetization Report - Holiday Seasons
+        2018
       languages:
         - title: English
           url: https://store.appota.com/index.php/s/dBNx7WitBQMqYKx
@@ -260,4 +252,16 @@ reports:
           url: https://store.appota.com/index.php/s/2SN2BCNxN6bCtge
         - title: Lite
           url: https://store.appota.com/index.php/s/7sBN7fEET4aA7Qo
+magazines:
+  header: E-magazines
+  items:
+    - title: "E-magazine 01: Thích nghi với COVID-19 Ngành Bán lẻ và Thương mại điện
+        tử "
+      url: https://store.appota.com/index.php/s/WfGox4A9MmKSAYZ
+      image: img/resources/e-magazine-1.jpg
+      class: mb-3 mb-md-0
+    - title: "E-magazine 02: Thích nghi với COVID-19 Ngành F&B"
+      url: https://store.appota.com/index.php/s/Gm6KGP6ACeFD24S
+      image: img/resources/e-magazine-2.jpg
 ---
+this is body
