@@ -63,6 +63,7 @@ collections:
                   - { name: image, widget: string }
                   - label: Link download
                     name: download
+                    widget: list
                     allow_add: true
                     fields:
                       - { name: title, widget: string }
