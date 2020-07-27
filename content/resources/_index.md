@@ -182,11 +182,11 @@ logos:
         - title: AI Vector
           url: https://appota.com/doc/Adsota/adsota.ai
 layout: resources
-intro: A directory of our resources
-title: Adsota Resources, Hello world
+intro: A directory of our resources, hello
 date: 2020-07-21T09:13:28+07:00
+title: Adsota Resources, Hello world
 branding:
-  header: Branding Guidelines
+  header: Branding Guidelines tesdfs
   items:
     - title: Adsota Brand Guideline
       image: img/resources/adsota-brand-guideline.jpg
@@ -196,6 +196,17 @@ branding:
       url: https://store.appota.com/index.php/s/gDcZayjs3RJq9bT
       class: align-items-stretch
 description: this is desc
+magazines:
+  header: E-magazines
+  items:
+    - title: "E-magazine 01: Thích nghi với COVID-19 Ngành Bán lẻ và Thương mại điện
+        tử "
+      url: https://store.appota.com/index.php/s/WfGox4A9MmKSAYZ
+      image: img/resources/e-magazine-1.jpg
+      class: mb-3 mb-md-0
+    - title: "E-magazine 02: Thích nghi với COVID-19 Ngành F&B"
+      url: https://store.appota.com/index.php/s/Gm6KGP6ACeFD24S
+      image: img/resources/e-magazine-2.jpg
 reports:
   header: Reports
   items:
@@ -214,8 +225,7 @@ reports:
         - title: Vietnamese
           url: https://store.appota.com/index.php/s/moartt5EfcCfkP4
     - image: img/report/report-6.jpg
-      title:
-        Vietnam Mobile App Advertising & Monetization Report - Holiday Seasons
+      title: Vietnam Mobile App Advertising & Monetization Report - Holiday Seasons
         2018
       languages:
         - title: English
@@ -253,18 +263,6 @@ reports:
           url: https://store.appota.com/index.php/s/2SN2BCNxN6bCtge
         - title: Lite
           url: https://store.appota.com/index.php/s/7sBN7fEET4aA7Qo
-magazines:
-  header: E-magazines
-  items:
-    - title:
-        "E-magazine 01: Thích nghi với COVID-19 Ngành Bán lẻ và Thương mại điện
-        tử "
-      url: https://store.appota.com/index.php/s/WfGox4A9MmKSAYZ
-      image: img/resources/e-magazine-1.jpg
-      class: mb-3 mb-md-0
-    - title: "E-magazine 02: Thích nghi với COVID-19 Ngành F&B"
-      url: https://store.appota.com/index.php/s/Gm6KGP6ACeFD24S
-      image: img/resources/e-magazine-2.jpg
 ---
 
 this is body
