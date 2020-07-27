@@ -50,7 +50,7 @@ collections:
                       - { name: title, widget: string }
                       - { name: url, widget: string }
           - label: Logos
-            name: Logos
+            name: logos
             widget: object
             fields:
               - label: Items
